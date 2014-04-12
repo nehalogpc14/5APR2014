@@ -50,7 +50,7 @@ public class Darts extends Mover
     public boolean touchingDemon() {    
      return !getIntersectingObjects(BlueDemon.class).isEmpty();    
      } 
-
+//I'm putting a comment here ;)
         //Checks to see is the Dart as at the edge of the screen. If it is, remove the Dart
     public boolean atSide()
     {
