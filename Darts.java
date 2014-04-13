@@ -13,7 +13,7 @@ public class Darts extends Mover
         //System.out.println(rotation);
         setRotation(rotation - 90);
         GreenfootImage img = getImage();
-        img.scale(20,20);
+        img.scale(40,40);
         setImage(img);
     }  
     
@@ -21,7 +21,8 @@ public class Darts extends Mover
     {
         //Sets our image as a smaller size
         GreenfootImage img = getImage();
-        img.scale(20,20);
+        img.scale(40,40);
+        //setRotation(270);
         setImage(img);
         
         move(15);

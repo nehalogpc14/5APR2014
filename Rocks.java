@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.Random;
 import java.awt.Color;
 import java.awt.Font;
-
+import java.util.*;
 /**
  * Write a description of class Rocks here.
  * 
@@ -41,7 +41,10 @@ public class Rocks extends Actor
         Lvl2BkgDesert myWorld = (Lvl2BkgDesert)getWorld();
         count++;
         //Detects when the dart hits the rock. When it does, the action follows.
-        Actor Darts=getOneIntersectingObject(Darts.class);
+        //List mylist = getObjectsInRange(10,Darts.class);
+        Actor Darts = getOneObjectAtOffset(0, 0, Darts.class);        
+        //Actor Darts=getOneIntersectingObject(Darts.class);
+        
         if(Darts!=null)
         {
             getWorld().removeObject(Darts);

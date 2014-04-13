@@ -58,7 +58,8 @@ public class Launcher extends Mover
 
             getWorld().addObject(d, getX()+xOffset, getY()+yOffset);
             shootdelay = 0;
- 
+            Lvl2BkgDesert lvl2 = (Lvl2BkgDesert) getWorld(); 
+            lvl2.DecrememntDarts(1); 
         }
     }
 }
